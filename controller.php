@@ -16,7 +16,7 @@ class Controller
 
   function __construct()
   {
-    $this->pdo = new PDO("mysql:host=127.0.0.1;dbname=journey","root","");
+    $this->pdo = new PDO("mysql:host=localhost;dbname=vici","root","root32523");
 
     // uri格式：/action/参数名/参数值...
     $this->urlArr = explode("/", $_SERVER['REQUEST_URI']);
